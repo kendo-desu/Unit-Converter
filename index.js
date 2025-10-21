@@ -32,15 +32,15 @@ async function copyResult(key){
     let textToCopy = ` ${results[key].imp} feet or ${results[key].met} meters`
 
     
-    // try {
-    //     await navigator.clipboard.writeText(textToCopy)
+ try {
+     await navigator.clipboard.writeText(textToCopy)
         alert(key + ' copied to clipboard!')
         console.log(textToCopy)
-    // } catch (err) {
-    //     console.error('Failed to copy text: ', err);
-    //     alert('Could not copy password. This might be due to browser permissions.');
+ } catch (err) {
+        console.error('Failed to copy text: ', err);
+     alert('Could not copy password. This might be due to browser permissions.');
     
-    // }
+ }
     }
 
 
